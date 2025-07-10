@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encontre as últimas notícias sobre PlayStation, games, lançamentos e novidades no universo dos videogames.">
+    <meta name="keywords" content="PlayStation, notícias, games, lançamentos, PS5, PS4, videogames, Sony, tecnologia">
+    <meta name="author" content="victorsaib">
+    <meta property="og:title" content="Notícias sobre PlayStation e Jogos">
+    <meta property="og:description" content="Fique por dentro das últimas notícias sobre PlayStation, novos jogos, lançamentos e tudo sobre o universo dos games.">
+    <meta property="og:image" content="url_da_imagem.jpg">
+    <title>Notícias sobre PlayStation e Jogos</title>
+
+    <style>
+        /* Estilos básicos e responsivos */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #003B5C;  /* Azul escuro do PlayStation */
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        .news-box {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .buttons-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .btn {
+            background-color: #005A8B;  /* Azul mais claro do PlayStation */
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #003B5C;  /* Azul escuro quando hover */
+        }
+        footer {
+            background-color: #003B5C;  /* Azul escuro do PlayStation */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        /* Estilo da propaganda piscante */
+        #propaganda-piscante, #propaganda-piscante2 {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            background-color: #FF4C00;  /* Cor vibrante para destaque */
+            color: white;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            text-align: center;
+            animation: piscando 1s infinite alternate;
+            cursor: pointer;
+            z-index: 9999;
+        }
+        #propaganda-piscante2 {
+            left: auto;
+            right: 10px;
+        }
+        /* Estilo do iframe como propaganda */
+        #iframe-propaganda {
+            width: 100%;
+            height: 800px;  /* Aumento da altura para 800px */
+            border: none;
+            border-radius: 8px;
+            margin-top: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        #iframe-propaganda:hover {
+            transform: scale(1.05);
+        }
+        /* Animação piscante */
+        @keyframes piscando {
+            0% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>sony tecnologia noticia</h1>
+    </header>
+    
+    <main>
+        <!-- Propaganda com iframe -->
+        <div id="iframe-propaganda" onclick="window.open('https://victorxx.github.io/iframegithub01/', '_blank')">
+            <iframe id="myIframe" src="https://victorxx.github.io/iframegithub01/" allowfullscreen loading="lazy" width="100%" height="400"></iframe>
+        </div>
+        
+        <!-- Container de notícias -->
+        <div id="news-container"></div>
+    </main>
+
+    <!-- Propagandas piscantes -->
+    <div id="propaganda-piscante" onclick="window.open('https://victorxx.github.io/topicogithub01/randomizador.html', '_blank')">
+        OFERTA IMPERDÍVEL!
+    </div>
+
+    <div id="propaganda-piscante2" onclick="window.open('https://www.airbnb.com.br/r/saibvictore?s=6&t=061n0g', '_blank')">
+        COMECE NO AIRBNB HJ MESMO
+    </div>
+
+    <footer>
+        <p>Sony playstation| <a href="#">Termos de Serviço</a> | <a href="#">Política de Privacidade</a></p>
+    </footer>
+
+    <script>
+        // Array de notícias
+        const noticias = [
+                    
+                  {
+                        titulo: "Lançamento do PlayStation 5 em 2025",
+                        descricao: "A Sony anunciou o novo modelo do PlayStation 5, com gráficos melhorados e mais capacidade de armazenamento. Veja o que esperar do novo console.",
+                        link: "https://www.sony.com/playstation5-lancamento-2025"
+                    },
+                    {
+                        titulo: "PlayStation Plus: Novos Jogos de Julho de 2025",
+                        descricao: "Confira os novos jogos que estarão disponíveis no PlayStation Plus para os assinantes em julho de 2025. Grandes títulos estão na lista!",
+                        link: "https://www.sony.com/plus-julho-2025"
+                    },
+                    {
+                        titulo: "Sony Apresenta Novo VR: PlayStation VR2",
+                        descricao: "A Sony revelou as últimas inovações no PlayStation VR2, com novas experiências imersivas para os fãs de realidade virtual.",
+                        link: "https://www.sony.com/playstation-vr2"
+                    },
+                    {
+                        titulo: "Gran Turismo 8: O Novo Capítulo da Franquia",
+                        descricao: "Gran Turismo 8 está confirmado para o PS5, trazendo gráficos de tirar o fôlego e novas funcionalidades para os fãs de simulação de corrida.",
+                        link: "https://www.sony.com/granturismo8-ps5"
+                    },
+                    {
+                        titulo: "PS4 continua forte com novos lançamentos",
+                        descricao: "Embora o PS5 esteja em alta, o PlayStation 4 continua sendo um dos consoles mais vendidos, com novos jogos em 2025 para os fãs.",
+                        link: "https://www.sony.com/ps4-lancamentos-2025"
+                    }
+        ];
+
+        // Função para gerar e exibir as notícias
+        function exibirNoticias() {
+            const container = document.getElementById('news-container');
+            noticias.forEach((noticia, index) => {
+                // Cria o item da notícia
+                const newsItem = document.createElement('div');
+                newsItem.classList.add('news-item');
+                newsItem.innerHTML = `
+                    <h3>${noticia.titulo}</h3>
+                    <p>${noticia.descricao}</p>
+                `;
+                
+                // Adiciona o botão "Ver Mais"
+                const btnVerMais = document.createElement('div');
+                btnVerMais.classList.add('buttons-container');
+                btnVerMais.innerHTML = ` 
+                    <button class="btn" onclick="window.location.href='${noticia.link}'">Ver Mais</button>
+                `;
+                
+                // Adiciona a notícia e o botão "Ver Mais"
+                container.appendChild(newsItem);
+                container.appendChild(btnVerMais);
+            });
+        }
+
+        // Carrega as notícias ao carregar a página
+        window.onload = exibirNoticias;
+    </script>
+</body>
+</html>
